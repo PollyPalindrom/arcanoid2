@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1840fa9b-cc02-47af-9273-908ea2ba9e14}</ProjectGuid>
+    <RootNamespace>arcanoid2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\libs\SDL2_mixer-2.0.4\include;C:\libs\SDL2-2.0.12\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\libs\SDL2_mixer-2.0.4\lib\x86;C:\libs\SDL2-2.0.12\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\animation.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\application.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\audio_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\default_font.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\drawing.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\font.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\fonts_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\fps_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\import_sprites.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\input.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\int_utils.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\i_loop.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\keyboard_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\lifecycle.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\lifecycle_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\loop_impl.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\arcanoid.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\mouse_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\picopng.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_audio.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_audio_context.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_context.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_deleter.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_inputs_handler.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_logger.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_render_context.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_texture.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_timing.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\setup_context.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sound.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sprite.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\sprites_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\text.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\time.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\time_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\video_memory_holder.cpp" />
+    <ClCompile Include="..\..\Arcanoid\Arcanoid\whycpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\animation.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\application.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\application_config.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\application_listener.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\audio.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\audio_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\average_window.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\buttons.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\color.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\context.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\c_api.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\default_font.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\drawing.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\font.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\fonts_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\fps_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\import_sprites.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\input.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\int_utils.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_inputs_handler.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_loop.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_object.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_render_handler.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\keyboard_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\lifecycle.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\lifecycle_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\log.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\logger.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\loop_impl.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\mouse_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\palette.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\picopng.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_audio_context.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_context.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_deleter.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_inputs_handler.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_render_context.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_texture.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\setup_context.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sound.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sprite.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\sprites_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\text.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\time.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\time_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\timing.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\types.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\video_memory_holder.h" />
+    <ClInclude Include="..\..\Arcanoid\Arcanoid\whycpp.h" />
+    <ClInclude Include="SDL_mixer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
