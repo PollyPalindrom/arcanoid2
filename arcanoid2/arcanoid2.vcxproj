@@ -145,7 +145,10 @@
     <ClCompile Include="animation.cpp" />
     <ClCompile Include="application.cpp" />
     <ClCompile Include="arcanoid.cpp" />
+    <ClCompile Include="arcanoid1.cpp" />
     <ClCompile Include="audio_holder.cpp" />
+    <ClCompile Include="ball.cpp" />
+    <ClCompile Include="brick.cpp" />
     <ClCompile Include="default_font.cpp" />
     <ClCompile Include="drawing.cpp" />
     <ClCompile Include="font.cpp" />
@@ -161,6 +164,8 @@
     <ClCompile Include="loop_impl.cpp" />
     <ClCompile Include="mouse_holder.cpp" />
     <ClCompile Include="picopng.cpp" />
+    <ClCompile Include="platform.cpp" />
+    <ClCompile Include="rectangle.cpp" />
     <ClCompile Include="sdl_audio.cpp" />
     <ClCompile Include="sdl_audio_context.cpp" />
     <ClCompile Include="sdl_context.cpp" />
@@ -185,9 +190,12 @@
     <ClInclude Include="application.h" />
     <ClInclude Include="application_config.h" />
     <ClInclude Include="application_listener.h" />
+    <ClInclude Include="arcanoid1.h" />
     <ClInclude Include="audio.h" />
     <ClInclude Include="audio_holder.h" />
     <ClInclude Include="average_window.h" />
+    <ClInclude Include="ball.h" />
+    <ClInclude Include="brick.h" />
     <ClInclude Include="buttons.h" />
     <ClInclude Include="color.h" />
     <ClInclude Include="context.h" />
@@ -211,6 +219,8 @@
     <ClInclude Include="mouse_holder.h" />
     <ClInclude Include="palette.h" />
     <ClInclude Include="picopng.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="rectangle.h" />
     <ClInclude Include="sdl_audio_context.h" />
     <ClInclude Include="sdl_context.h" />
     <ClInclude Include="sdl_deleter.h" />

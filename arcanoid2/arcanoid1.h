@@ -22,9 +22,17 @@
 #include "brick.h"
 #include "rectangle.h"
 #include "ball.h"
-#include "arcanoid1.h"
-int main() {
-  SetLogLevel(LogLevel::DEBUG);
-  RunApp<Arcanoid>(ApplicationConfig(256, 144, "Arcanoid", true));
-  return 0;
-}
+class Arcanoid : public ApplicationListener {
+    Platform* platform=nullptr;
+    Ball* ball = nullptr;
+    std::vector<Ball*> balls;
+    std::vector<Brick*> bricks;
+    bool pause = true;
+    RGBA* color = nullptr;
+ public:
+     void OnCreate(Context& ctx) override;
+     void OnRender(Context& ctx) override;
+     void HandlePause(Context& ctx);
+     void Win();
+     void Lose();
+};
