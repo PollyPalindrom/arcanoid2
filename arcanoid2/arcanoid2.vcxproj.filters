@@ -15,267 +15,258 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\animation.cpp">
+    <ClCompile Include="animation.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\application.cpp">
+    <ClCompile Include="application.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\audio_holder.cpp">
+    <ClCompile Include="arcanoid.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\default_font.cpp">
+    <ClCompile Include="audio_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\drawing.cpp">
+    <ClCompile Include="default_font.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\font.cpp">
+    <ClCompile Include="drawing.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\fonts_holder.cpp">
+    <ClCompile Include="font.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\fps_holder.cpp">
+    <ClCompile Include="fonts_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\i_loop.cpp">
+    <ClCompile Include="fps_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\import_sprites.cpp">
+    <ClCompile Include="i_loop.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\input.cpp">
+    <ClCompile Include="import_sprites.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\int_utils.cpp">
+    <ClCompile Include="input.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\keyboard_holder.cpp">
+    <ClCompile Include="int_utils.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\lifecycle.cpp">
+    <ClCompile Include="keyboard_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\lifecycle_holder.cpp">
+    <ClCompile Include="lifecycle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\loop_impl.cpp">
+    <ClCompile Include="lifecycle_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\mouse_holder.cpp">
+    <ClCompile Include="loop_impl.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\picopng.cpp">
+    <ClCompile Include="mouse_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_audio.cpp">
+    <ClCompile Include="picopng.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_audio_context.cpp">
+    <ClCompile Include="sdl_audio.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_context.cpp">
+    <ClCompile Include="sdl_audio_context.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_deleter.cpp">
+    <ClCompile Include="sdl_context.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_inputs_handler.cpp">
+    <ClCompile Include="sdl_deleter.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_logger.cpp">
+    <ClCompile Include="sdl_inputs_handler.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_render_context.cpp">
+    <ClCompile Include="sdl_logger.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_texture.cpp">
+    <ClCompile Include="sdl_render_context.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sdl_timing.cpp">
+    <ClCompile Include="sdl_texture.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\setup_context.cpp">
+    <ClCompile Include="sdl_timing.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sound.cpp">
+    <ClCompile Include="setup_context.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sprite.cpp">
+    <ClCompile Include="sound.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\sprites_holder.cpp">
+    <ClCompile Include="sprite.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\text.cpp">
+    <ClCompile Include="sprites_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\time.cpp">
+    <ClCompile Include="text.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\time_holder.cpp">
+    <ClCompile Include="time.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\video_memory_holder.cpp">
+    <ClCompile Include="time_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\whycpp.cpp">
+    <ClCompile Include="video_memory_holder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Arcanoid\Arcanoid\arcanoid.cpp">
+    <ClCompile Include="whycpp.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\animation.h">
+    <ClInclude Include="animation.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\whycpp.h">
+    <ClInclude Include="application.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\video_memory_holder.h">
+    <ClInclude Include="application_config.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\types.h">
+    <ClInclude Include="application_listener.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\timing.h">
+    <ClInclude Include="audio.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\time_holder.h">
+    <ClInclude Include="audio_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\time.h">
+    <ClInclude Include="average_window.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\text.h">
+    <ClInclude Include="buttons.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sprites_holder.h">
+    <ClInclude Include="c_api.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sprite.h">
+    <ClInclude Include="color.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sound.h">
+    <ClInclude Include="context.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\setup_context.h">
+    <ClInclude Include="default_font.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_texture.h">
+    <ClInclude Include="drawing.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_render_context.h">
+    <ClInclude Include="font.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="SDL_mixer.h">
+    <ClInclude Include="fonts_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_inputs_handler.h">
+    <ClInclude Include="fps_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_deleter.h">
+    <ClInclude Include="i_inputs_handler.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_context.h">
+    <ClInclude Include="i_loop.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\sdl_audio_context.h">
+    <ClInclude Include="i_object.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\picopng.h">
+    <ClInclude Include="i_render_handler.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\palette.h">
+    <ClInclude Include="import_sprites.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\mouse_holder.h">
+    <ClInclude Include="input.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\loop_impl.h">
+    <ClInclude Include="int_utils.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\logger.h">
+    <ClInclude Include="keyboard_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\log.h">
+    <ClInclude Include="lifecycle.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\lifecycle_holder.h">
+    <ClInclude Include="lifecycle_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\lifecycle.h">
+    <ClInclude Include="loop_impl.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\keyboard_holder.h">
+    <ClInclude Include="mouse_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\int_utils.h">
+    <ClInclude Include="palette.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\input.h">
+    <ClInclude Include="picopng.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\import_sprites.h">
+    <ClInclude Include="sdl_audio_context.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_render_handler.h">
+    <ClInclude Include="sdl_context.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_object.h">
+    <ClInclude Include="sdl_deleter.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_loop.h">
+    <ClInclude Include="sdl_inputs_handler.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\i_inputs_handler.h">
+    <ClInclude Include="sdl_render_context.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\fps_holder.h">
+    <ClInclude Include="sdl_texture.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\fonts_holder.h">
+    <ClInclude Include="setup_context.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\font.h">
+    <ClInclude Include="sound.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\application.h">
+    <ClInclude Include="sprite.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\application_config.h">
+    <ClInclude Include="sprites_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\application_listener.h">
+    <ClInclude Include="text.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\audio.h">
+    <ClInclude Include="time.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\audio_holder.h">
+    <ClInclude Include="time_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\average_window.h">
+    <ClInclude Include="timing.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\buttons.h">
+    <ClInclude Include="types.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\c_api.h">
+    <ClInclude Include="video_memory_holder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\color.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\context.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\default_font.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Arcanoid\Arcanoid\drawing.h">
+    <ClInclude Include="whycpp.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
