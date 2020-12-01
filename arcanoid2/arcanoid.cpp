@@ -18,13 +18,12 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include "platform.h"
+#include "platform.h" 
 #include "brick.h"
 #include "rectangle.h"
 #include "ball.h"
 #include "arcanoid1.h"
 int main() {
-  SetLogLevel(LogLevel::DEBUG);
-  RunApp<Arcanoid>(ApplicationConfig(256, 144, "Arcanoid", true));
+  RunApp<Arcanoid>(ApplicationConfig(256, 144, "Arcanoid", false));
   return 0;
 }

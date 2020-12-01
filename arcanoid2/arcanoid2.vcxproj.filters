@@ -13,119 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\enjine">
+      <UniqueIdentifier>{8cf0eb46-8d5f-4c79-982a-cd659a19be5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\enjine">
+      <UniqueIdentifier>{305d002e-9244-4c8d-a5b1-d15d0d261ffa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="animation.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="application.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="arcanoid.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="audio_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="default_font.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="drawing.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="font.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="fonts_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="fps_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="i_loop.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="import_sprites.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="input.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="int_utils.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="keyboard_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="lifecycle.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="lifecycle_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="loop_impl.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="mouse_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="picopng.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_audio.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_audio_context.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_context.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_deleter.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_inputs_handler.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_logger.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_render_context.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_texture.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sdl_timing.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="setup_context.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sound.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sprite.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="sprites_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="text.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="time.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="time_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="video_memory_holder.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="whycpp.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="platform.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -141,149 +36,119 @@
     <ClCompile Include="arcanoid1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="arcanoid.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="default_font.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="drawing.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="fonts_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="fps_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="i_loop.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="import_sprites.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="int_utils.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="lifecycle.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="lifecycle_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="loop_impl.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="picopng.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_audio.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_audio_context.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sprites_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_context.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_deleter.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_inputs_handler.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_logger.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_render_context.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_texture.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl_timing.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="setup_context.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="text.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="time_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="video_memory_holder.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="whycpp.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="animation.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="application.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="application_config.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="application_listener.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="audio.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="audio_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="average_window.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="buttons.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="c_api.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="color.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="context.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="default_font.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="drawing.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="font.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="fonts_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="fps_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="i_inputs_handler.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="i_loop.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="i_object.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="i_render_handler.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="import_sprites.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="input.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="int_utils.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="keyboard_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="lifecycle.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="lifecycle_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="loop_impl.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="mouse_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="palette.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="picopng.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sdl_audio_context.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sdl_context.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sdl_deleter.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sdl_inputs_handler.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sdl_render_context.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sdl_texture.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="setup_context.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sound.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sprite.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="sprites_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="text.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="time.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="time_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="timing.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="types.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="video_memory_holder.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="whycpp.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="platform.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -298,6 +163,147 @@
     </ClInclude>
     <ClInclude Include="arcanoid1.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="application_config.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="application_listener.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="audio.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="average_window.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="c_api.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="context.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="default_font.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="drawing.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="buttons.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="fonts_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="fps_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="i_inputs_handler.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="i_loop.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="i_object.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="i_render_handler.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="import_sprites.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="int_utils.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboard_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="lifecycle.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="lifecycle_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="loop_impl.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="palette.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="picopng.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl_audio_context.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl_context.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl_deleter.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl_inputs_handler.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl_render_context.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl_texture.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="setup_context.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="sprites_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="text.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="time.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="time_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="timing.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="video_memory_holder.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="whycpp.h">
+      <Filter>Файлы заголовков\enjine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

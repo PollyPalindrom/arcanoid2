@@ -1,8 +1,6 @@
 #pragma once
 
 class IObject {
- public:
-  virtual ~IObject() = default;
+public:
+	virtual ~IObject() = default;
 };
-
-

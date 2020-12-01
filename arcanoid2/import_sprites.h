@@ -12,3 +12,7 @@ class Context;
  * @return
  */
 i32 ImportSprite(Context &context, const std::string &filename);
+
+class import_sprites
+{
+};
