@@ -18,12 +18,8 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include "platform.h" 
-#include "brick.h"
-#include "rectangle.h"
-#include "ball.h"
-#include "arcanoid1.h"
+#include "Arcanoid1.h"
 int main() {
-  RunApp<Arcanoid>(ApplicationConfig(256, 144, "Arcanoid", false));
+	RunApp<Arcanoid1>(ApplicationConfig(224, 256, "Application", false, 2));
   return 0;
 }
