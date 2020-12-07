@@ -10,7 +10,7 @@ Entity* EntityManager::CreateEntity() {
 }
 void EntityManager::DeleteEntity(size_t id) {
 	auto iter = std::remove_if(entities.begin(), entities.end(), [id](const auto& entity) { return entity->GetId() == id; });
-	entities.erase(iter, entities.end());
+ 	entities.erase(iter, entities.end());
 }
 EntityManager::~EntityManager() {
 	entities.clear();

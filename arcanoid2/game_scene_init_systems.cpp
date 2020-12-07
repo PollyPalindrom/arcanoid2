@@ -8,13 +8,13 @@
 #include "player_control_system.h"
 #include "rectangle_render_system.h"
 #include "texture_render_system.h"
-
+//регестрация систем
 void GameScene::InitSystems() {
     engine->GetSystemManager()
-        ->AddSystem<CollisionSystem>()
-        ->AddSystem<PlayerControlSystem>()
-        ->AddSystem<BallControlSystem>(GetSceneManager())
-        ->AddSystem<PhysicsSystem>()
+        ->AddSystem<CollisionSystem>()//обработка столкновений
+        ->AddSystem<PlayerControlSystem>()//обработка управления
+        ->AddSystem<BallControlSystem>(GetSceneManager())//управление шариком
+        ->AddSystem<PhysicsSystem>()//обработка физики 
         ->AddSystem<MovementSystem>()
         ->AddSystem<BricksSystem>(GetSceneManager())
         ->AddSystem<CircleRenderSystem>()

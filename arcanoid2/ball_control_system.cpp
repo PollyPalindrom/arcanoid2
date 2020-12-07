@@ -11,6 +11,7 @@
 #include "lifecycle.h"
 #include "counter.h"
 #include "platform_component.h"
+//проверка всех коллизий шарика со всеми объектами. В зависимости от нормали отправляем в противоположном направлении. Он края платформы-хитро
 void BallControlSystem::Update(Context& ctx, Entity* entity) {
     auto tc = entity->Get<TransformComponent>();
     auto mc = entity->Get<MovementComponent>();

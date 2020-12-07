@@ -15,10 +15,11 @@ void PhysicsSystem::Update(Context& ctx, Entity* entity) {
 
     if (!rc->is_kinematic) { return; } // the object is static, we cannot move it
     Vec2 v(0, 0);
+    //рассматриваем все коллизии 
     for (const auto& collision : cc->GetCollisions()) {
         // TODO: somehow calculate the force to move
-        v += collision.manifold.normal * collision.manifold.penetration;
+        v += collision.manifold.normal * collision.manifold.penetration;// вычисление направления смещения
     }
 
-    tc->position += v;
+    tc->position += v;//смещаем в сторону, противоположную для объекта
 }

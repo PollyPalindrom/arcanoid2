@@ -1,7 +1,7 @@
 #include "scene_manager.h"
 #include "scene.h"
 #include <iostream>
-
+//обёртка для работы со сценами. необходима для перемещения между сценами
 void SceneManager::OnUpdate() {
     if (scenes.size() > current_scene) {
         if (first_start) {

@@ -5,7 +5,7 @@
 #include <set>
 #include <string>
 #include <typeindex>
-
+//энтити-объект в игре
 class Entity {
     friend class EntityManager;
     std::map<std::type_index, std::shared_ptr<IComponent>> components;
@@ -17,7 +17,7 @@ public:
     }
     std::string GetTag() const {
         return tag;
-    }
+    } 
     template<typename Component>
     std::shared_ptr<Component> Get() const {
         auto c = components.at(typeid(Component));
