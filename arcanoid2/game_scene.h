@@ -11,6 +11,7 @@ class GameScene : public ECSScene {
 	void CreateBall(const Vec2& platform_pos, const Vec2& platform_size);
 	void CreateBricks();
 	void CreateBorders();
+	void CreateBonus(const Vec2& pos);
 	void InitSystems();
 	void InitEntities();
 public:

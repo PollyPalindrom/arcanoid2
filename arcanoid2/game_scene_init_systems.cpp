@@ -8,6 +8,7 @@
 #include "player_control_system.h"
 #include "rectangle_render_system.h"
 #include "texture_render_system.h"
+#include "shredder_system.h"
 //регестрация систем
 void GameScene::InitSystems() {
     engine->GetSystemManager()
@@ -16,6 +17,7 @@ void GameScene::InitSystems() {
         ->AddSystem<BallControlSystem>(GetSceneManager())//управление шариком
         ->AddSystem<PhysicsSystem>()//обработка физики 
         ->AddSystem<MovementSystem>()
+        ->AddSystem<ShredderSystem>()
         ->AddSystem<BricksSystem>(GetSceneManager())
         ->AddSystem<CircleRenderSystem>()
         ->AddSystem<TextureRenderSystem>()

@@ -13,6 +13,7 @@
 #include "circle_render_component.h"
 #include "platform_component.h"
 #include "rect_collider_component.h"
+#include "enlarge_bonus_component.h"
 void GameScene::CreateBorder(const Vec2& size, const Vec2& pos) {
     auto border = engine->GetEntityManager()->CreateEntity();
     border->Add<TransformComponent>(pos);
@@ -52,6 +53,7 @@ void GameScene::InitEntities() {
 
     CreateBricks();
     CreateBorders();
+    CreateBonus(Vec2(100,100));
 }
 GameScene::GameScene(Context& ctx) : ECSScene(ctx), ctx(ctx) {}
 
@@ -95,5 +97,16 @@ void GameScene::CreateBorders() {
     //  CreateBorder(engine, Vec2(GetDisplayWidth(ctx), 10), Vec2(0, GetDisplayHeight(ctx))); // bottom
     CreateBorder(Vec2(6, GetDisplayHeight(ctx)), Vec2(0, 0));                         // left
     CreateBorder(Vec2(6, GetDisplayHeight(ctx)), Vec2(GetDisplayWidth(ctx) - 6, 0));  // right
+}
+void GameScene::CreateBonus(const Vec2 &pos) {
+    auto bonus = engine->GetEntityManager()->CreateEntity();
+    auto size = Vec2(10, 10);
+    auto speed = Vec2(200, 200);
+    auto dir = DownVec2;
+    bonus->Add<TransformComponent>(pos);
+    bonus->Add<RectColliderComponent>(size);
+    bonus->Add<MovementComponent>(speed,dir);
+    bonus->Add<EnlargeBonusComponent>(2);
+    bonus->Add<RectangleRenderComponent>(size,PALETTE[11], true);
 }
 

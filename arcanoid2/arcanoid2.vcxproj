@@ -192,6 +192,7 @@
     <ClCompile Include="sdl_texture.cpp" />
     <ClCompile Include="sdl_timing.cpp" />
     <ClCompile Include="setup_context.cpp" />
+    <ClCompile Include="shredder_system.cpp" />
     <ClCompile Include="sound.cpp" />
     <ClCompile Include="player_control_system.cpp" />
     <ClCompile Include="sprite.cpp" />
@@ -219,6 +220,7 @@
     <ClInclude Include="average_window.h" />
     <ClInclude Include="ball_component.h" />
     <ClInclude Include="ball_control_system.h" />
+    <ClInclude Include="enlarge_bonus_component.h" />
     <ClInclude Include="bricks_system.h" />
     <ClInclude Include="brick_component.h" />
     <ClInclude Include="buttons.h" />
@@ -279,6 +281,7 @@
     <ClInclude Include="sdl_render_context.h" />
     <ClInclude Include="sdl_texture.h" />
     <ClInclude Include="setup_context.h" />
+    <ClInclude Include="shredder_system.h" />
     <ClInclude Include="sound.h" />
     <ClInclude Include="sprite.h" />
     <ClInclude Include="sprites_holder.h" />

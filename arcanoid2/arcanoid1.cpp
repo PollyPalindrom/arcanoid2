@@ -5,7 +5,6 @@
 #include "win_scene.h"
 #include "engine.h"
 using namespace std;
-
 void Arcanoid1::OnCreate(Context& ctx) {
     scene_manager.Add<TitleScene>(ctx);
     scene_manager.Add<GameScene>(ctx);
