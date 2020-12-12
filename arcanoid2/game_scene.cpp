@@ -14,6 +14,7 @@
 #include "platform_component.h"
 #include "rect_collider_component.h"
 #include "resize_bonus_component.h"
+#include "bonuses.h"
 void GameScene::CreateBorder(const Vec2& size, const Vec2& pos) {
     auto border = engine->GetEntityManager()->CreateEntity();
     border->Add<TransformComponent>(pos);
@@ -53,7 +54,7 @@ void GameScene::InitEntities() {
 
     CreateBricks();
     CreateBorders();
-    CreateBonus(Vec2(100,100));
+    CreateBonus(Vec2(100,100), 0.5, engine->GetEntityManager());
 }
 GameScene::GameScene(Context& ctx) : ECSScene(ctx), ctx(ctx) {}
 
@@ -98,15 +99,5 @@ void GameScene::CreateBorders() {
     CreateBorder(Vec2(6, GetDisplayHeight(ctx)), Vec2(0, 0));                         // left
     CreateBorder(Vec2(6, GetDisplayHeight(ctx)), Vec2(GetDisplayWidth(ctx) - 6, 0));  // right
 }
-void GameScene::CreateBonus(const Vec2 &pos) {
-    auto bonus = engine->GetEntityManager()->CreateEntity();
-    auto size = Vec2(10, 10);
-    auto speed = Vec2(200, 200);
-    auto dir = DownVec2;
-    bonus->Add<TransformComponent>(pos);
-    bonus->Add<RectColliderComponent>(size);
-    bonus->Add<MovementComponent>(speed,dir);
-    bonus->Add<ResizeBonusComponent>(2);
-    bonus->Add<RectangleRenderComponent>(size,PALETTE[11], true);
-}
+
 
