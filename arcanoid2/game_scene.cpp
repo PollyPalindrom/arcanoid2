@@ -26,7 +26,7 @@ void GameScene::CreateBrick(const Vec2& pos, const Vec2& size) {
     auto brick = engine->GetEntityManager()->CreateEntity();
     brick->SetTag("brick");
     brick->Add<TransformComponent>(pos);
-    brick->Add<RectangleRenderComponent>(size, PALETTE[8]);
+    brick->Add<RectangleRenderComponent>(size, PALETTE[15]);
     brick->Add<RectColliderComponent>(size);
     brick->Add<BrickComponent>();
 }
@@ -47,7 +47,7 @@ void GameScene::OnDispose() {
 
 void GameScene::InitEntities() {
     auto platform_pos = Vec2((GetDisplayWidth(ctx) - 16.0) / 2, GetDisplayHeight(ctx) - 20.0);
-    auto platform_size = Vec2(52, 7);
+    auto platform_size = Vec2(42, 7);
 
     CreatePlatform(platform_pos, platform_size);
     CreateBall(platform_pos, platform_size);

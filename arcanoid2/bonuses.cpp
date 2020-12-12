@@ -11,6 +11,8 @@ void CreateBonus(const Vec2& pos, double power, EntityManager*entityManager) {
     auto size = Vec2(10, 10);
     auto speed = Vec2(200, 200);
     auto dir = DownVec2;
+    auto color = PALETTE[11];
+    if (power < 1) color = PALETTE[8];
     bonus->Add<TransformComponent>(pos);
     bonus->Add<RectColliderComponent>(size);
     bonus->Add<MovementComponent>(speed, dir);
