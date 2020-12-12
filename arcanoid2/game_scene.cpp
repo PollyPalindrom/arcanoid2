@@ -13,7 +13,7 @@
 #include "circle_render_component.h"
 #include "platform_component.h"
 #include "rect_collider_component.h"
-#include "enlarge_bonus_component.h"
+#include "resize_bonus_component.h"
 void GameScene::CreateBorder(const Vec2& size, const Vec2& pos) {
     auto border = engine->GetEntityManager()->CreateEntity();
     border->Add<TransformComponent>(pos);
@@ -106,7 +106,7 @@ void GameScene::CreateBonus(const Vec2 &pos) {
     bonus->Add<TransformComponent>(pos);
     bonus->Add<RectColliderComponent>(size);
     bonus->Add<MovementComponent>(speed,dir);
-    bonus->Add<EnlargeBonusComponent>(2);
+    bonus->Add<ResizeBonusComponent>(2);
     bonus->Add<RectangleRenderComponent>(size,PALETTE[11], true);
 }
 

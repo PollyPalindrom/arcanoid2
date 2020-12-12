@@ -9,6 +9,7 @@
 #include "rectangle_render_system.h"
 #include "texture_render_system.h"
 #include "shredder_system.h"
+#include "resize_bonus_system.h"
 //регестрация систем
 void GameScene::InitSystems() {
     engine->GetSystemManager()
@@ -18,6 +19,7 @@ void GameScene::InitSystems() {
         ->AddSystem<PhysicsSystem>()//обработка физики 
         ->AddSystem<MovementSystem>()
         ->AddSystem<ShredderSystem>()
+        ->AddSystem<ResizeBonusSystem>()
         ->AddSystem<BricksSystem>(GetSceneManager())
         ->AddSystem<CircleRenderSystem>()
         ->AddSystem<TextureRenderSystem>()

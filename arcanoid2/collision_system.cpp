@@ -9,6 +9,7 @@ void CollisionSystem::Update(Context& ctx, Entity* entity) {
     auto cc = entity->Get<RectColliderComponent>();
     auto box = cc->GetAABB(tc->position);
     // с кем ещё объект пересекается проверяет. Если это не сам объект, то производится пересечение
+    if (cc->is_sleeping) return;
     GetEntityManager()->ForEach([cc, box, entity](Entity* e) {
         if (!e->Contains<RectColliderComponent>() || e->GetId() == entity->GetId()) { return; }
         auto tc2 = e->Get<TransformComponent>();

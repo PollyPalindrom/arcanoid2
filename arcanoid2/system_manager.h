@@ -11,10 +11,10 @@ public:
     explicit SystemManager(EntityManager* entityManager) : entityManager(entityManager) {}
 
     template<typename System, typename... Args>
-    SystemManager* AddSystem(Args &&... args) {
-        auto system = new System(std::forward<Args>(args)...);
-        system->entityManager = entityManager;
-        systems.push_back(std::unique_ptr<System>(system));
+    SystemManager* AddSystem(Args &&... args) {// принмает на вход аргументы(переменное число). Ёто оаргументы конструктора системы, которую мы хотим создать 
+        auto system = new System(std::forward<Args>(args)...);//создание экземпл€ра класса
+        system->entityManager = entityManager;// складывваетс€ в список
+        systems.push_back(std::unique_ptr<System>(system));// оборачиваетс€ в уникальный указатель
         return this;
     }
 
