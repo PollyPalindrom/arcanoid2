@@ -1,3 +1,5 @@
+#include "level1_creator.h"
+#include "engine.h"
 #include "game_scene.h"
 #include "ball_control_system.h"
 #include "bricks_system.h"
@@ -10,17 +12,18 @@
 #include "texture_render_system.h"
 #include "shredder_system.h"
 #include "resize_bonus_system.h"
+#include "scene.h"
 //регестрация систем
-void GameScene::InitSystems() {
+void Level1Creator::InitSystems() {
     engine->GetSystemManager()
         ->AddSystem<CollisionSystem>()//обработка столкновений
         ->AddSystem<PlayerControlSystem>()//обработка управления
-        ->AddSystem<BallControlSystem>(GetSceneManager())//управление шариком
+        ->AddSystem<BallControlSystem>(sceneManager)//управление шариком
         ->AddSystem<PhysicsSystem>()//обработка физики 
         ->AddSystem<MovementSystem>()
         ->AddSystem<ShredderSystem>()
         ->AddSystem<ResizeBonusSystem>()
-        ->AddSystem<BricksSystem>(GetSceneManager())
+        ->AddSystem<BricksSystem>(sceneManager)
         ->AddSystem<CircleRenderSystem>()
         ->AddSystem<TextureRenderSystem>()
         ->AddSystem<RectangleRenderSystem>();

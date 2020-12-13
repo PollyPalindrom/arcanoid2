@@ -40,3 +40,14 @@ void SceneManager::NextScene() {
         current_scene = 0;
     }
 }
+
+void SceneManager::SetScene(const std::string &name)
+{
+    if (named_scenes.count(name) == 0) {
+        std::cout << "There isn't scene" << name <<"Going to the first scene"<< std::endl;
+        SetScene(0);
+        return;
+    }
+    auto id = named_scenes.at(name);
+    SetScene(id);
+}

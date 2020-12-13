@@ -5,7 +5,7 @@ class SceneManager;
 
 class IScene {
     friend class SceneManager;
-    SceneManager* sceneManager = nullptr;
+    SceneManager* sceneManager;
 public:
     SceneManager* GetSceneManager() const;
     virtual void OnCreate() {}

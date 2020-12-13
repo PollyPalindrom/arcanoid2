@@ -3,19 +3,30 @@
 #include "engine.h"
 #include "ecs_scene.h"
 #include "vec2.h"
+#include "level_creator.h"
+#include <memory>
+#include "game_scene.h"
+#include "palette.h"
+#include "drawing.h"
+#include "level_creator.h"
+#include "level1_creator.h"
+template<typename LevelCreator>
 class GameScene : public ECSScene {
 	Context& ctx;
-	void CreateBrick(const Vec2& pos, const Vec2& size);
-	void CreateBorder(const Vec2& size, const Vec2& pos);
-	void CreatePlatform(const Vec2& platform_pos, const Vec2& platform_size);
-	void CreateBall(const Vec2& platform_pos, const Vec2& platform_size);
-	void CreateBricks();
-	void CreateBorders();
-	void InitSystems();
-	void InitEntities();
+	std::unique_ptr<LevelCreator> levelcreator;
 public:
-	explicit GameScene(Context& ctx);
-	void OnCreate() override;
-	void OnUpdate() override;
-	void OnDispose() override;
+	GameScene(Context& ctx) : ECSScene(ctx), ctx(ctx) {
+		levelcreator = std::make_unique<Level1Creator>(engine.get(), ctx, GetSceneManager());
+	}
+	~GameScene() override=default;
+	void OnCreate() override{
+		levelcreator->Init();
+	}
+	void OnUpdate() override{
+		DrawClearScreen(ctx, PALETTE[1]);
+		engine->Update(ctx);
+	}
+	void OnDispose() override{
+		levelcreator->Dispose();
+	}
 };
