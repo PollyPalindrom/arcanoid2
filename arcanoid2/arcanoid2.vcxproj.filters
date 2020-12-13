@@ -189,9 +189,6 @@
     <ClCompile Include="fail_scene.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="game_scene.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="win_scene.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -259,6 +256,15 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="level3_systems.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="level4_creator.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="level4_entities.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="level4_systems.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -570,6 +576,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="level3_creator.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="level4_creator.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

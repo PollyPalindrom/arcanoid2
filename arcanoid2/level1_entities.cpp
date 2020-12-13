@@ -20,7 +20,6 @@ void Level1Creator::InitEntities() {
 
     CreateBricks();
     CreateBorders();
-    CreateBonus(Vec2(100, 100), 0.5, engine->GetEntityManager());
 }
 void Level1Creator::CreateBricks() {
 

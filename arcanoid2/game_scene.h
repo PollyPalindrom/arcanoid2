@@ -16,7 +16,7 @@ class GameScene : public ECSScene {
 	std::unique_ptr<LevelCreator> levelcreator;
 public:
 	GameScene(Context& ctx) : ECSScene(ctx), ctx(ctx) {
-		levelcreator = std::make_unique<Level1Creator>(engine.get(), ctx, GetSceneManager());
+		levelcreator = std::make_unique<LevelCreator>(engine.get(), ctx, GetSceneManager());
 	}
 	~GameScene() override=default;
 	void OnCreate() override{

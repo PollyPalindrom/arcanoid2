@@ -166,7 +166,6 @@
     <ClCompile Include="font.cpp" />
     <ClCompile Include="fonts_holder.cpp" />
     <ClCompile Include="fps_holder.cpp" />
-    <ClCompile Include="game_scene.cpp" />
     <ClCompile Include="import_sprites.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="int_utils.cpp" />
@@ -182,6 +181,9 @@
     <ClCompile Include="level3_creator.cpp" />
     <ClCompile Include="level3_entities.cpp" />
     <ClCompile Include="level3_systems.cpp" />
+    <ClCompile Include="level4_creator.cpp" />
+    <ClCompile Include="level4_entities.cpp" />
+    <ClCompile Include="level4_systems.cpp" />
     <ClCompile Include="lifecycle.cpp" />
     <ClCompile Include="lifecycle_holder.cpp" />
     <ClCompile Include="loop_impl.cpp" />
@@ -244,6 +246,7 @@
     <ClInclude Include="level1_creator.h" />
     <ClInclude Include="level2_creator.h" />
     <ClInclude Include="level3_creator.h" />
+    <ClInclude Include="level4_creator.h" />
     <ClInclude Include="level_creator.h" />
     <ClInclude Include="next_level_scene.h" />
     <ClInclude Include="platform.h" />

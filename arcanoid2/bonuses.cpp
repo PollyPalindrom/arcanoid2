@@ -17,5 +17,5 @@ void CreateBonus(const Vec2& pos, double power, EntityManager*entityManager) {
     bonus->Add<RectColliderComponent>(size);
     bonus->Add<MovementComponent>(speed, dir);
     bonus->Add<ResizeBonusComponent>(power);
-    bonus->Add<RectangleRenderComponent>(size, PALETTE[11], true);
+    bonus->Add<RectangleRenderComponent>(size, color, true);
 }

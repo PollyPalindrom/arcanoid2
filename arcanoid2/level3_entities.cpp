@@ -20,7 +20,6 @@ void Level3Creator::InitEntities() {
     CreateBall(engine->GetEntityManager(), platform_pos + Vec2(0, -10), platform_size);
     CreateBricks();
     CreateBorders();
-    CreateBonus(Vec2(100, 100), 0.5, engine->GetEntityManager());
 }
 void Level3Creator::CreateBricks() {
 

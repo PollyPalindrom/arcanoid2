@@ -16,7 +16,7 @@ public:
         ((Scene*)scene_raw)->sceneManager = this;
         auto scene = new(scene_raw) Scene(std::forward<Args>(args)...);
         scenes.push_back(std::unique_ptr<Scene>(scene));
-        name_scenes[name] = scenes.size() - 1;
+        named_scenes[name] = scenes.size() - 1;
     }
     void OnUpdate();
     void OnDispose();
