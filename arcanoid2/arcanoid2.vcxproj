@@ -179,6 +179,9 @@
     <ClCompile Include="level2_creator.cpp" />
     <ClCompile Include="level2_entities.cpp" />
     <ClCompile Include="level2_systems.cpp" />
+    <ClCompile Include="level3_creator.cpp" />
+    <ClCompile Include="level3_entities.cpp" />
+    <ClCompile Include="level3_systems.cpp" />
     <ClCompile Include="lifecycle.cpp" />
     <ClCompile Include="lifecycle_holder.cpp" />
     <ClCompile Include="loop_impl.cpp" />
@@ -240,6 +243,7 @@
     <ClInclude Include="half_delete_bonus_component.h" />
     <ClInclude Include="level1_creator.h" />
     <ClInclude Include="level2_creator.h" />
+    <ClInclude Include="level3_creator.h" />
     <ClInclude Include="level_creator.h" />
     <ClInclude Include="next_level_scene.h" />
     <ClInclude Include="platform.h" />

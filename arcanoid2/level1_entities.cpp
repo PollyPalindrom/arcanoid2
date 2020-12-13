@@ -24,7 +24,7 @@ void Level1Creator::InitEntities() {
 }
 void Level1Creator::CreateBricks() {
 
-    for (int i = 1; i < 12; i++) {
+    for (int i = 0; i < 13; i++) {
         for (int j = 1; j < 4; j++) {
             auto size = Vec2(15, 8);
             CreateBrick(engine->GetEntityManager(), Vec2(8 + i * (size.x + 1), 12 + j * (size.y + 1)), size);
