@@ -9,13 +9,13 @@
 class Entity {
     friend class EntityManager;
     std::map<std::type_index, std::shared_ptr<IComponent>> components;
-    std::string tag{};
+    char tag='a';
     size_t id;
 public:
-    void SetTag(const std::string& tag_) {
+    void SetTag(const char& tag_) {
         tag = tag_;
     }
-    std::string GetTag() const {
+    char GetTag() const {
         return tag;
     } 
     template<typename Component>

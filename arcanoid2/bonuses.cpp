@@ -8,7 +8,7 @@
 #include "rectangle_render_component.h"
 void CreateBonus(const Vec2& pos, double power, EntityManager*entityManager) {
     auto bonus = entityManager->CreateEntity();
-    auto size = Vec2(10, 10);
+    auto size = Vec2(13, 6);
     auto speed = Vec2(200, 200);
     auto dir = DownVec2;
     auto color = PALETTE[11];

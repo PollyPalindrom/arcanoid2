@@ -9,7 +9,7 @@
 void CreatePlatform(EntityManager* entityManager, const Vec2& platform_pos, const Vec2& platform_size) {
     auto platform_speed = 290;
     auto platform = entityManager->CreateEntity();
-    platform->SetTag("platform");
+    platform->SetTag('p');
     platform->Add<PlayerControlComponent>();
     platform->Add<PlatformComponent>();
     platform->Add<MovementComponent>(Vec2(platform_speed, 0));

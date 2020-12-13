@@ -15,7 +15,7 @@ void CreateBall(EntityManager*entityManager,const Vec2& platform_pos, const Vec2
     auto ball_pos = Vec2(platform_pos.x + platform_size.x / 2 - br / 2, platform_pos.y - br);
     auto ball_size = Vec2(br, br);
     auto ball = entityManager->CreateEntity();
-    ball->SetTag("ball");
+    ball->SetTag('b');
     ball->Add<TransformComponent>(ball_pos);
     ball->Add<RectColliderComponent>(ball_size);
     ball->Add<MovementComponent>(Vec2(ball_speed, ball_speed), Vec2(1, -1).Normalize());

@@ -6,7 +6,7 @@
 #include "palette.h"
 void CreateBrick(EntityManager*entityManager,const Vec2& pos, const Vec2& size) {
     auto brick = entityManager->CreateEntity();
-    brick->SetTag("brick");
+    brick->SetTag('r');
     brick->Add<TransformComponent>(pos);
     brick->Add<RectangleRenderComponent>(size, PALETTE[15]);
     brick->Add<RectColliderComponent>(size);

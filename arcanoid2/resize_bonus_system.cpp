@@ -19,7 +19,7 @@ void ResizeBonusSystem::Update(Context& ctx, Entity* entity)
 	auto bc = entity->Get<ResizeBonusComponent>();
 	auto rc = entity->Get<RectColliderComponent>();
 	for (auto& collision : rc->GetCollisions()) {
-		if (collision.entity->GetTag() != "platform") continue;
+		if (collision.entity->GetTag() != 'p') continue;
 		rc->is_sleeping = true;
 		ApplyBonus(collision.entity, bc.get());
 	}
