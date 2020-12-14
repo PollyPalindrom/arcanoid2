@@ -1,4 +1,6 @@
 #include "entity_manager.h"
 #include "vec2.h"
+#include "color.h"
 #pragma once
-void CreateBrick(EntityManager*entityManager,const Vec2& pos, const Vec2& size);
+RGBA ColorHP(int hp);
+void CreateBrick(EntityManager*entityManager,const Vec2& pos, const Vec2& size, int hp=1);

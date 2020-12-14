@@ -7,15 +7,22 @@
 #include <iostream>
 #include "transform_component.h"
 #include <ctime>
+#include "rectangle_render_component.h"
+#include <cstdint>
+#include "brick.h"
 bool BricksSystem::Filter(Entity* entity) const {
-    return entity->Contains<BrickComponent>() && entity->Contains<RectColliderComponent>() && entity->Contains<TransformComponent>();
+    return entity->Contains<BrickComponent>() && entity->Contains<RectColliderComponent>() && entity->Contains<TransformComponent>()&& entity->Contains<RectangleRenderComponent>();
 }
 void BricksSystem::Update(Context& ctx, Entity* entity) {
     auto bc = entity->Get<BrickComponent>();
     auto rc = entity->Get<RectColliderComponent>();
-
+    auto render = entity->Get<RectangleRenderComponent>();
+    render->color = ColorHP(bc->hp);
     for (const auto& collision : rc->GetCollisions()) {
         if (collision.entity->Contains<BallComponent>()) {
+            if (--bc->hp > 0) {
+               continue;
+            }
             to_delete.push_back(entity->GetId());
             auto tc = entity->Get<TransformComponent>();
             bonusespawner.Spawn(GetEntityManager(),tc->position);

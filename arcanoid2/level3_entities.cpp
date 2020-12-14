@@ -26,7 +26,8 @@ void Level3Creator::CreateBricks() {
         for (int j = 1; j < 10; j+=2) {
             if (i > j)  continue;
             auto size = Vec2(15, 8);
-            CreateBrick(engine->GetEntityManager(), Vec2(8 + i * (size.x + 1), 12 + j * (size.y + 1)), size);
+            auto hp = 1;
+            CreateBrick(engine->GetEntityManager(), Vec2(8 + i * (size.x + 1), 12 + j * (size.y + 1)), size, hp);
         }
     }
 }
