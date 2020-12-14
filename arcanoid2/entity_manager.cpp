@@ -2,6 +2,12 @@
 #include <memory>
 #include <algorithm>
 #include "entity.h"
+Entity* EntityManager::Findbytag(char tag)
+{
+	for (auto& entity : entities) {
+		if (entity->GetTag() == tag) return entity.get();
+	}
+}
 Entity* EntityManager::CreateEntity() {
 	auto entity = new Entity();
 	entity->id = ++last_entity_id;

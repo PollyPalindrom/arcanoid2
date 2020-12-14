@@ -5,18 +5,8 @@
 #include "entity_manager.h"
 #include "counter.h"
 #include <iostream>
-#include "bonuses.h"
 #include "transform_component.h"
 #include <ctime>
-void SpawnBonus(EntityManager* entityManager, const Vec2&pos) {
-    srand(time(0));
-    double power;
-    if(rand() % 2 == 0) {
-        if (rand() % 2 == 0) power = 0.5;
-        else power = 1.25;
-        CreateBonus(pos,power, entityManager);
-    }
- }
 bool BricksSystem::Filter(Entity* entity) const {
     return entity->Contains<BrickComponent>() && entity->Contains<RectColliderComponent>() && entity->Contains<TransformComponent>();
 }
@@ -28,7 +18,7 @@ void BricksSystem::Update(Context& ctx, Entity* entity) {
         if (collision.entity->Contains<BallComponent>()) {
             to_delete.push_back(entity->GetId());
             auto tc = entity->Get<TransformComponent>();
-            SpawnBonus(GetEntityManager(), tc->position);
+            bonusespawner.Spawn(GetEntityManager(),tc->position);
         }
     }
 }
@@ -44,4 +34,5 @@ void BricksSystem::OnPostUpdate(Context& ctx) {
         sceneManager->NextScene();
     }
 }
-BricksSystem::BricksSystem(SceneManager* sceneManager) : sceneManager(sceneManager) {}
+BricksSystem::BricksSystem(SceneManager* sceneManager) : sceneManager(sceneManager) {
+}

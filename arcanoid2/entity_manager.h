@@ -18,6 +18,7 @@ public:
             func(entity.get());
         }
     }
+    Entity* Findbytag(char tag);
     Entity* CreateEntity();
     void DeleteEntity(size_t id);
     void RemoveEntities();

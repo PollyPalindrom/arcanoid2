@@ -1,7 +1,6 @@
 #include "level1_creator.h"
 #include "drawing.h"
 #include "game_scene.h"
-#include "bonuses.h"
 #include "transform_component.h"
 #include "palette.h"
 #include "rectangle_render_component.h"

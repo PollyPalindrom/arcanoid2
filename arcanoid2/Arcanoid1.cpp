@@ -12,11 +12,11 @@
 using namespace std;
 void Arcanoid1::OnCreate(Context& ctx) {
     scene_manager.Add<TitleScene>("title",ctx);
-    /*scene_manager.Add<GameScene<Level1Creator>>("level1",ctx);
-    scene_manager.Add<NextLevelScene>("next_level_2", ctx);*/
-   /* scene_manager.Add<GameScene<Level2Creator>>("level2",ctx);
-    scene_manager.Add<NextLevelScene>("next_level_3", ctx);*/
-    scene_manager.Add<GameScene<Level3Creator>>("level3",ctx);
+   scene_manager.Add<GameScene<Level1Creator>>("level1",ctx);
+    scene_manager.Add<NextLevelScene>("next_level_2", ctx);
+   scene_manager.Add<GameScene<Level2Creator>>("level2",ctx);
+    scene_manager.Add<NextLevelScene>("next_level_3", ctx);
+   scene_manager.Add<GameScene<Level3Creator>>("level3",ctx);
     scene_manager.Add<NextLevelScene>("next_level_4", ctx);
     scene_manager.Add<GameScene<Level4Creator>>("level4", ctx);
     scene_manager.Add<WinScene>("game_win",ctx);

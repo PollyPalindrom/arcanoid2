@@ -1,12 +1,16 @@
-#include "bonuses.h"
-#include "entity.h"
+#include "pl_resize_bonus_builder.h"
+#include "palette.h"
 #include "transform_component.h"
 #include "rect_collider_component.h"
 #include "movement_component.h"
 #include "resize_bonus_component.h"
-#include "palette.h"
 #include "rectangle_render_component.h"
-void CreateBonus(const Vec2& pos, double power, EntityManager*entityManager) {
+#include <ctime>
+#include "nextnum.h"
+void PlResizeBonusBuiilder::Build(EntityManager* entityManager, Vec2 pos)
+{
+ 
+    double power = 1.25;
     auto bonus = entityManager->CreateEntity();
     auto size = Vec2(13, 6);
     auto speed = Vec2(200, 200);

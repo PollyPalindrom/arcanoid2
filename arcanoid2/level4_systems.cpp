@@ -13,6 +13,7 @@
 #include "shredder_system.h"
 #include "resize_bonus_system.h"
 #include "scene.h"
+#include "multi_ball_bonus_system.h"
 //регестрация систем
 void Level4Creator::InitSystems() {
     engine->GetSystemManager()
@@ -23,6 +24,7 @@ void Level4Creator::InitSystems() {
         ->AddSystem<MovementSystem>()
         ->AddSystem<ShredderSystem>()
         ->AddSystem<ResizeBonusSystem>()
+        ->AddSystem<MultiBallBonusSystem>()
         ->AddSystem<BricksSystem>(sceneManager)
         ->AddSystem<CircleRenderSystem>()
         ->AddSystem<TextureRenderSystem>()
