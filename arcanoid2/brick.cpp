@@ -9,7 +9,7 @@ RGBA ColorHP(int hp) {
     else if (hp == 2) return RGBA{ 200,160,110,255 };
     else return RGBA{131,118,156,255};
 }
-void CreateBrick(EntityManager*entityManager,const Vec2& pos, const Vec2& size, int hp=1) {
+void CreateBrick(EntityManager*entityManager,const Vec2& pos, const Vec2& size, int hp) {
     auto brick = entityManager->CreateEntity();
     brick->SetTag('r');
     brick->Add<TransformComponent>(pos);
