@@ -9,15 +9,18 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Исходные файлы\enjine">
       <UniqueIdentifier>{8cf0eb46-8d5f-4c79-982a-cd659a19be5c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Файлы заголовков\enjine">
       <UniqueIdentifier>{305d002e-9244-4c8d-a5b1-d15d0d261ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sounds">
+      <UniqueIdentifier>{687ac121-4680-4534-8626-61a8665ba48b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -106,9 +109,6 @@
       <Filter>Исходные файлы\enjine</Filter>
     </ClCompile>
     <ClCompile Include="setup_context.cpp">
-      <Filter>Исходные файлы\enjine</Filter>
-    </ClCompile>
-    <ClCompile Include="sound.cpp">
       <Filter>Исходные файлы\enjine</Filter>
     </ClCompile>
     <ClCompile Include="sprite.cpp">
@@ -279,6 +279,9 @@
     <ClCompile Include="mn_resie_bonus_builder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation.h">
@@ -387,9 +390,6 @@
       <Filter>Файлы заголовков\enjine</Filter>
     </ClInclude>
     <ClInclude Include="setup_context.h">
-      <Filter>Файлы заголовков\enjine</Filter>
-    </ClInclude>
-    <ClInclude Include="sound.h">
       <Filter>Файлы заголовков\enjine</Filter>
     </ClInclude>
     <ClInclude Include="sprite.h">
@@ -611,5 +611,13 @@
     <ClInclude Include="mn_resie_bonus_builder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="C:\Users\Polina\Downloads\grazhdanskaya-oborona-tarasyuk-remiks--po-planu-vse-chiki-pu (online-audio-converter.com).wav">
+      <Filter>sounds</Filter>
+    </Media>
   </ItemGroup>
 </Project>

@@ -30,26 +30,19 @@ void ImportSFX(Context &context, const std::string &path, const std::string &nam
  * @param name Name of the music to play.
  * @param loops Number of loops, -1 is infinite loops. Passing one here plays the sample twice (1 loop).
  */
-void PlayMusic(const Context &context, const std::string &name, i32 loops = -1);
-/**
- *
- * @param name Name of the music to play.
- * @param loops Number of loops, -1 is infinite loops. Passing one here plays the sample twice (1 loop).
- * @param ticks Millisecond limit to play sample, at most. If not enough loops or the sample chunk is not long enough,
- * then the sample may stop before this timeout occurs. -1 means play forever.
- */
-void PlaySFX(const Context &context, const std::string &name, i32 loops = 0, i32 ticks = -1);
-/**
- * Stop the music. Next PlayMusic call starts playing from the beginning.
- * @param context
- * @param name unique music name which was set by ImportMusic
- */
-void StopMusic(const Context &context, const std::string &name);
-/**
- * Stop the sound effect. Next PlaySFX call starts playing from the beginning.
- * @param context
- * @param name unique sound effect name which was set by ImportSFX
- */
-void StopSFX(const Context &context, const std::string &name);
-
-/** @} */
+#include <map>
+#include <string>
+#include "SDL_mixer.h"
+using namespace std;
+class Sound
+{
+	map<string, string> musics_names;
+	map<string, string> sounds_names;
+	map<string, Mix_Music*> musics;
+	map<string, Mix_Music*> sounds;
+public:
+	void RegistMusic(string name, string path);
+	void RegistSound(string name, string path);
+	Mix_Music* GetMusic(string name) const;
+	Mix_Music* GetSound(string name) const;
+};
