@@ -11,15 +11,17 @@
 #include "lifecycle.h"
 #include "counter.h"
 #include "platform_component.h"
+#include "audio_component.h"
 //проверка всех коллизий шарика со всеми объектами. В зависимости от нормали отправляем в противоположном направлении. Он края платформы-хитро
 void BallControlSystem::Update(Context& ctx, Entity* entity) {
     auto tc = entity->Get<TransformComponent>();
     auto mc = entity->Get<MovementComponent>();
     auto rc = entity->Get<RigidBodyComponent>();
     auto cc = entity->Get<RectColliderComponent>();
-
+    auto ac = entity->Get<AudioComponent>();
     if (cc->AnyCollisions()) {
         for (const auto& collision : cc->GetCollisions()) {
+            ac->Play();
             auto v = collision.manifold.normal;
             if (v.x > 0 || v.x < 0) {
                 mc->direction.x *= -1;

@@ -19,6 +19,7 @@ void Level4Creator::InitEntities() {
     CreateBall(engine->GetEntityManager(), platform_pos + Vec2(0, -10), platform_size);
     CreateBricks();
     CreateBorders();
+    CreateMusic(engine->GetEntityManager(), "music1");
 }
 void Level4Creator::CreateBricks() {
 

@@ -3,4 +3,4 @@
 
 #include "vec2.h"
 void CreatePlatform(EntityManager* entityManager, const Vec2& platform_pos, const Vec2& platform_size);
-
+void CreateMusic(EntityManager* entityManager, const std::string name);

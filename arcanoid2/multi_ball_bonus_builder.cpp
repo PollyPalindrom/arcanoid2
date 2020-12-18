@@ -5,6 +5,7 @@
 #include "movement_component.h"
 #include "multi_ball_bonus_component.h"
 #include "rectangle_render_component.h"
+#include "audio_component.h"
 
 void MultiBallBonusBuiilder::Build(EntityManager* entityManager, Vec2 pos)
 {
@@ -13,6 +14,7 @@ void MultiBallBonusBuiilder::Build(EntityManager* entityManager, Vec2 pos)
     auto speed = Vec2(200, 200);
     auto dir = DownVec2;
     auto color = PALETTE[9];
+    bonus->Add<AudioComponent>("bonus", false,0);
     bonus->Add<TransformComponent>(pos);
     bonus->Add<RectColliderComponent>(size);
     bonus->Add<MovementComponent>(speed, dir);

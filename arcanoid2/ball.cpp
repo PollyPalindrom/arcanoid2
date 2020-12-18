@@ -9,6 +9,7 @@
 #include "movement_component.h"
 #include "ball_component.h"
 #include "rigid_body_component.h"
+#include "audio_component.h"
 void CreateBall(EntityManager*entityManager,const Vec2& platform_pos, const Vec2& platform_size) {
     auto br = 3.0;
     auto ball_pos = Vec2(platform_pos.x + platform_size.x / 2 - br / 2, platform_pos.y - br);
@@ -20,6 +21,7 @@ void CreateBall2(EntityManager* entityManager, const Vec2& ball_pos, const Vec2 
     auto ball_size = Vec2(br, br);
     auto ball = entityManager->CreateEntity();
     ball->SetTag('b');
+    ball->Add<AudioComponent>("hit", false,0);
     ball->Add<TransformComponent>(ball_pos);
     ball->Add<RectColliderComponent>(ball_size);
     ball->Add<MovementComponent>(Vec2(ball_speed, ball_speed), dir);

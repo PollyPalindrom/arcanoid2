@@ -7,6 +7,7 @@
 #include "rectangle_render_component.h"
 #include <ctime>
 #include "nextnum.h"
+#include "audio_component.h"
 void PlResizeBonusBuiilder::Build(EntityManager* entityManager, Vec2 pos)
 {
  
@@ -17,6 +18,7 @@ void PlResizeBonusBuiilder::Build(EntityManager* entityManager, Vec2 pos)
     auto dir = DownVec2;
     auto color = PALETTE[11];
     if (power < 1) color = PALETTE[8];
+    bonus->Add<AudioComponent>("bonus", false,0);
     bonus->Add<TransformComponent>(pos);
     bonus->Add<RectColliderComponent>(size);
     bonus->Add<MovementComponent>(speed, dir);

@@ -3,11 +3,15 @@
 #include "rect_collider_component.h"
 #include <iostream>
 #include "rectangle_render_component.h"
-void ApplyBonus(Entity* entity, ResizeBonusComponent* bc) {
+#include "audio_component.h"
+void ApplyBonus(Entity* entity, Entity* bonus) {
+	auto bc = bonus->Get<ResizeBonusComponent>();
 	auto render = entity->Get<RectangleRenderComponent>();
 	auto box = entity->Get<RectColliderComponent>();
 	box->size.x *= bc->power;
 	render->size.x *= bc->power;
+	bonus->Get<AudioComponent>()->Play();
+
 }
 bool ResizeBonusSystem::Filter(Entity* entity) const
 {
@@ -21,6 +25,6 @@ void ResizeBonusSystem::Update(Context& ctx, Entity* entity)
 	for (auto& collision : rc->GetCollisions()) {
 		if (collision.entity->GetTag() != 'p') continue;
 		rc->is_sleeping = true;
-		ApplyBonus(collision.entity, bc.get());
+		ApplyBonus(collision.entity, entity);
 	}
 }

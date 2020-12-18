@@ -280,6 +280,15 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="sound.cpp">
+      <Filter>Исходные файлы\enjine</Filter>
+    </ClCompile>
+    <ClCompile Include="music.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="music_manager.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_system.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -612,6 +621,18 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="sound.h">
+      <Filter>Файлы заголовков\enjine</Filter>
+    </ClInclude>
+    <ClInclude Include="music.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="music_manager.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_system.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_component.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
