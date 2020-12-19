@@ -635,6 +635,9 @@
     <ClInclude Include="audio_component.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="error.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Media Include="C:\Users\Polina\Downloads\grazhdanskaya-oborona-tarasyuk-remiks--po-planu-vse-chiki-pu (online-audio-converter.com).wav">

@@ -250,6 +250,7 @@
     <ClInclude Include="border.h" />
     <ClInclude Include="brick.h" />
     <ClInclude Include="audio_system.h" />
+    <ClInclude Include="error.h" />
     <ClInclude Include="i_bonus_creator.h" />
     <ClInclude Include="level1_creator.h" />
     <ClInclude Include="level2_creator.h" />

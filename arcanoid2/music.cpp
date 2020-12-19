@@ -1,6 +1,7 @@
 #include "music.h"
 #include "SDL_mixer.h"
 #include <iostream>
+#include "error.h"
 void Music::RegistMusic( const string& name, const string& path)
 {
     musics_names[name] = path;
@@ -13,16 +14,28 @@ void Music::RegistSound(const string& name, const string &path)
 
 Mix_Music* Music::GetMusic(const string &name)
 {
-    if (musics_names.count(name) == 0) {
-        cout << "There is no music" << endl;
-        return nullptr;
+    try {
+        if (musics_names.count(name) == 0) {
+            throw 5;
+        }
+    }
+    catch (int i) {
+        Exception ex(i);
+        ex.Print();
+        return nullptr;;
     }
     auto path = musics_names.at(name);
     if (musics.count(path) == 0) {
         auto music = Mix_LoadMUS(path.c_str());
-        if (music == nullptr) {
-            cout << "Can't read music" << endl;
-            return nullptr;
+        try {
+            if (music == nullptr) {
+                throw 6;
+            }
+        }
+        catch (int i) {
+            Exception ex(i);
+            ex.Print();
+            return nullptr;;
         }
         musics[path] = music;
         return music;
@@ -34,16 +47,28 @@ Mix_Music* Music::GetMusic(const string &name)
 
 Mix_Chunk* Music::GetSound(const string& name)
 {
-    if (sounds_names.count(name) == 0) {
-        cout << "There is no sound" << endl;
-        return nullptr;
+    try {
+        if (sounds_names.count(name) == 0) {
+            throw 7;
+        }
+    }
+    catch (int i) {
+        Exception ex(i);
+        ex.Print();
+        return nullptr;;
     }
     auto path = sounds_names.at(name);
     if (sounds.count(path) == 0) {
         auto sound = Mix_LoadWAV(path.c_str());
-        if (sound == nullptr) {
-            cout << "Can't read sound" << endl;
-            return nullptr;
+        try {
+            if (sound == nullptr) {
+                throw 8;
+            }
+        }
+        catch (int i) {
+            Exception ex(i);
+            ex.Print();
+            return nullptr;;
         }
         sounds[path] = sound;
         return sound;

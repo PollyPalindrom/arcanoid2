@@ -50,7 +50,6 @@ void BallControlSystem::OnUpdate(Context& ctx) {
     Counter<BallComponent> counter;
     GetEntityManager()->ForEachMutable(counter);
     if (counter.get() == 0) {
-        std::cout << "Game Over" << std::endl;
         sceneManager->SetScene("game_over");
     }
 }

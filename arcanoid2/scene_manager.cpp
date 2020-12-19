@@ -1,25 +1,32 @@
 #include "scene_manager.h"
 #include "scene.h"
 #include <iostream>
+#include "error.h"
 //обёртка для работы со сценами. необходима для перемещения между сценами
 void SceneManager::OnUpdate() {
-    if (scenes.size() > current_scene) {
-        if (first_start) {
-            first_start = false;
-            scenes.at(current_scene)->OnCreate();
-            prev_scene = current_scene;
+    try {
+        if (scenes.size() > current_scene) {
+            if (first_start) {
+                first_start = false;
+                scenes.at(current_scene)->OnCreate();
+                prev_scene = current_scene;
+            }
+            else if (prev_scene != current_scene) {
+                scenes.at(prev_scene)->OnDispose();
+                prev_scene = current_scene;
+                scenes.at(current_scene)->OnCreate();
+            }
+            scenes.at(current_scene)->OnUpdate();
         }
-        else if (prev_scene != current_scene) {
-            scenes.at(prev_scene)->OnDispose();
-            prev_scene = current_scene;
-            scenes.at(current_scene)->OnCreate();
+        else {
+            throw 1;
         }
-        scenes.at(current_scene)->OnUpdate();
     }
-    else {
-        std::cout << "[WARNING] Cannot update scene " << current_scene
-            << ": it doesn't exist. Scenes size is "
-            << scenes.size() << std::endl;
+    catch (int i)
+    {
+        Exception ex(i);
+        ex.Print();
+        return;
     }
 }
 void SceneManager::OnDispose() {
@@ -43,9 +50,16 @@ void SceneManager::NextScene() {
 
 void SceneManager::SetScene(const std::string &name)
 {
-    if (named_scenes.count(name) == 0) {
-        std::cout << "There isn't scene" << name <<"Going to the first scene"<< std::endl;
-        SetScene(0);
+    try {
+        if (named_scenes.count(name) == 0) {
+            SetScene(0);
+            throw 2;
+            return;
+        }
+    }
+    catch(int i){
+        Exception ex(i);
+        ex.Print();
         return;
     }
     auto id = named_scenes.at(name);

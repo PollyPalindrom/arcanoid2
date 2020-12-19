@@ -37,7 +37,6 @@ void BricksSystem::OnPostUpdate(Context& ctx) {
     Counter<BrickComponent> counter;
     GetEntityManager()->ForEachMutable(counter);
     if (counter.get() == 0) {
-        std::cout << "Next Level" << std::endl;
         sceneManager->NextScene();
     }
 }
