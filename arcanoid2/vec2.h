@@ -49,21 +49,10 @@ public:
         return *this;
     }
 
-    double DotProd(const Vec2& rhs) const {
-        return x * rhs.x + y * rhs.y;
-    }
-
-    double CrossProd(const Vec2& rhs) const {
-        return x * rhs.y - y * rhs.x;
-    }
-
     Vec2 Abs() const {
         return Vec2(std::abs(x), std::abs(y));
     }
 
-    /**
-     * Euclidean L2 norm, Length of the vector.
-     */
     double Magnitude() const {
         return std::sqrt(x * x + y * y);
     }

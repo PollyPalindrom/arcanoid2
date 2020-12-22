@@ -8,11 +8,7 @@ class ISystem {
     friend class SystemManager;
     EntityManager* entityManager{};
 public:
-    void Update(Context& ctx); /*{
-        manager.ForEach([this, &ctx](Entity& entity) {
-            if (Filter(entity)) Update(ctx, entity);
-            });
-    }*/
+    void Update(Context& ctx); 
     virtual ~ISystem() = default;
 protected:
     virtual void OnUpdate(Context& ctx) {};

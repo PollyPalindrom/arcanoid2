@@ -5,7 +5,7 @@ class TitleScene : public ECSScene {
 	Context& ctx;
 public:
 	explicit TitleScene(Context& ctx);
-	void OnCreate() override;
 	void OnUpdate() override;
-	void OnDispose() override;
+	void OnCreate() override {}
+	void OnDispose() override {}
 };

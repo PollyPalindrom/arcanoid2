@@ -8,8 +8,10 @@ void ApplyBonus(Entity* entity, Entity* bonus) {
 	auto bc = bonus->Get<ResizeBonusComponent>();
 	auto render = entity->Get<RectangleRenderComponent>();
 	auto box = entity->Get<RectColliderComponent>();
-	box->size.x *= bc->power;
-	render->size.x *= bc->power;
+	if ((box->size.x < 84 && bc->power==1.25)|| (box->size.x>10 && bc->power==0.5)) {
+		box->size.x *= bc->power;
+		render->size.x *= bc->power;
+	}
 	bonus->Get<AudioComponent>()->Play();
 
 }

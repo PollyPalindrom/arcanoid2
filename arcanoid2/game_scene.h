@@ -12,6 +12,7 @@
 #include "level1_creator.h"
 template<typename LevelCreator>
 class GameScene : public ECSScene {
+	
 	Context& ctx;
 	std::unique_ptr<LevelCreator> levelcreator;
 public:

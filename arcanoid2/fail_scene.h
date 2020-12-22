@@ -5,7 +5,7 @@ class FailScene : public ECSScene {
 	Context& ctx;
 public:
 	explicit FailScene(Context& ctx);
-	void OnCreate() override;
 	void OnUpdate() override;
-	void OnDispose() override;
+	void OnCreate() override {}
+	void OnDispose() override {}
 };

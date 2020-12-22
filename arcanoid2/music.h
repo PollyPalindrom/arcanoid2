@@ -15,7 +15,5 @@ public:
 	Mix_Music* GetMusic(const string &name);
 	Mix_Chunk* GetSound(const string &name);
 	~Music();
-	/*void ClearSound();
-	void ClearMusic();*/
 };
 

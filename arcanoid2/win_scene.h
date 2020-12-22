@@ -6,7 +6,7 @@ class WinScene : public ECSScene {
 	Context& ctx;
 public:
 	explicit WinScene(Context& ctx);
-	void OnCreate() override;
 	void OnUpdate() override;
-	void OnDispose() override;
+	void OnCreate() override {}
+	void OnDispose() override {}
 };

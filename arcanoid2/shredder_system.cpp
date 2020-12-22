@@ -15,7 +15,6 @@ void ShredderSystem::Update(Context& ctx, Entity*entity) {
 void ShredderSystem::OnPostUpdate(Context& ctx) {
     for (auto id : to_delete) {
         GetEntityManager()->DeleteEntity(id);
-        cout << "Delete ball " << id << std::endl;
     }
     to_delete.clear();
 }

@@ -24,8 +24,8 @@ bool AudioSystem::Filter(Entity* entity) const
     return entity->Contains<AudioComponent>();
 }
 AudioSystem::AudioSystem() : manager(std::make_unique<MusicManager>()) {
-    manager->GetAssets()->RegistMusic("music1", "D:\\kpiuap\\grazhdanskaya-oborona-tarasyuk-remiks--po-planu-vse-chiki-pu (online-audio-converter.com).WAV");
-    manager->GetAssets()->RegistSound("hit", "D:\\kpiuap\\jg-032316-sfx-8-bit-punch (online-audio-converter.com).WAV");
-    manager->GetAssets()->RegistSound("platform", "D:\\kpiuap\\jg-032316-sfx-8-bit-score-1 (online-audio-converter.com).WAV");
-    manager->GetAssets()->RegistSound("bonus", "D:\\kpiuap\\aa4b773936bb0cb (online-audio-converter.com).WAV");
+    manager->GetAssets()->RegistMusic("music1", "D:\\arcanoid2\\arcanoid2\\grazhdanskaya-oborona-tarasyuk-remiks--po-planu-vse-chiki-pu (online-audio-converter.com).WAV");
+    manager->GetAssets()->RegistSound("hit", "D:\\arcanoid2\\arcanoid2\\jg-032316-sfx-8-bit-punch (online-audio-converter.com).WAV");
+    manager->GetAssets()->RegistSound("platform", "D:\\arcanoid2\\arcanoid2\\jg-032316-sfx-8-bit-score-1 (online-audio-converter.com).WAV");
+    manager->GetAssets()->RegistSound("bonus", "D:\\arcanoid2\\arcanoid2\\aa4b773936bb0cb (online-audio-converter.com).WAV");
 }

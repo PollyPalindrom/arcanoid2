@@ -13,7 +13,6 @@ BonusSpawner::BonusSpawner(){
 void BonusSpawner::Spawn(EntityManager* entityManager,const Vec2& pos)
 {
 	auto t =r.Nextnum(-5, builder.size());
-	std::cout << t << endl;
 	if (t < 0) return;
 	builder.at(t)->Build(entityManager, pos);
 }

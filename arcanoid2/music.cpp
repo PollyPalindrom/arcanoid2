@@ -35,7 +35,7 @@ Mix_Music* Music::GetMusic(const string &name)
         catch (int i) {
             Exception ex(i);
             ex.Print();
-            return nullptr;;
+            return nullptr;
         }
         musics[path] = music;
         return music;
@@ -68,7 +68,7 @@ Mix_Chunk* Music::GetSound(const string& name)
         catch (int i) {
             Exception ex(i);
             ex.Print();
-            return nullptr;;
+            return nullptr;
         }
         sounds[path] = sound;
         return sound;

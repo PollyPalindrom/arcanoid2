@@ -14,13 +14,9 @@ public:
     }
     void Print()
     {
-        if (this->warning == 1)
-        {
-            std::cout << "[WARNING] Cannot update scene " << std::endl;
-        }
         if (this->warning == 2)
         {
-            std::cout << "There isn't scene" << "Going to the first scene" << std::endl;
+            std::cout << "There isn't scene" <<std::endl<< "Going to the first scene" << std::endl;
         }
         if (this->warning == 3)
         {

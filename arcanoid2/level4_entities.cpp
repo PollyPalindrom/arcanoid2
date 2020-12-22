@@ -24,7 +24,7 @@ void Level4Creator::InitEntities() {
 void Level4Creator::CreateBricks() {
 
     for (int i = 0; i < 13; i+= 2) {
-        for (int j = 1; j < 11; j++) {
+        for (int j = 1; j < 11; j+=2) {
             auto size = Vec2(15, 8);
             auto hp = 1;
             if (i % 3 == 0)hp = 4;
@@ -32,9 +32,9 @@ void Level4Creator::CreateBricks() {
         }
     }
 }
+
 void Level4Creator::CreateBorders() {
     CreateBorder(engine->GetEntityManager(), Vec2(GetDisplayWidth(ctx), 6), Vec2(0, 0));  // top
     CreateBorder(engine->GetEntityManager(), Vec2(6, GetDisplayHeight(ctx)), Vec2(0, 0));                         // left
     CreateBorder(engine->GetEntityManager(), Vec2(6, GetDisplayHeight(ctx)), Vec2(GetDisplayWidth(ctx) - 6, 0));  // right
 }
-

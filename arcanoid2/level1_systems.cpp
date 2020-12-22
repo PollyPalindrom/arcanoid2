@@ -9,7 +9,6 @@
 #include "physics_system.h"
 #include "player_control_system.h"
 #include "rectangle_render_system.h"
-#include "texture_render_system.h"
 #include "shredder_system.h"
 #include "resize_bonus_system.h"
 #include "scene.h"
@@ -29,6 +28,5 @@ void Level1Creator::InitSystems() {
         ->AddSystem<MultiBallBonusSystem>()
         ->AddSystem<BricksSystem>(sceneManager)
         ->AddSystem<CircleRenderSystem>()
-        ->AddSystem<TextureRenderSystem>()
         ->AddSystem<RectangleRenderSystem>();
 }

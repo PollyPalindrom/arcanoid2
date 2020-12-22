@@ -8,8 +8,8 @@ class IScene {
     SceneManager* sceneManager;
 public:
     SceneManager* GetSceneManager() const;
-    virtual void OnCreate() {}
     virtual void OnUpdate() {}
+    virtual void OnCreate() {}
     virtual void OnDispose() {}
     virtual ~IScene() = default;
 };

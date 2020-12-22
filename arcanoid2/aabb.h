@@ -3,8 +3,8 @@
 #include <ostream>
 class AABB {
 public:
-    class Vec2 min; // upper left
-	const Vec2 max; // bottom right
+    const Vec2 min; // верхний левый угол
+	const Vec2 max; // правый нижний угол
 
 	AABB(const Vec2& min, const Vec2& max) : min(min), max(max) {}
 

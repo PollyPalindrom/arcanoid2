@@ -16,15 +16,14 @@ void Level2Creator::InitEntities() {
 
     CreatePlatform(engine->GetEntityManager(), platform_pos, platform_size);
     CreateBall(engine->GetEntityManager(), platform_pos, platform_size);
-    CreateBall(engine->GetEntityManager(), platform_pos+Vec2(0,-10), platform_size);
     CreateBricks();
     CreateBorders();
     CreateMusic(engine->GetEntityManager(), "music1");
 }
 void Level2Creator::CreateBricks() {
 
-    for (int i = 0; i < 13; i++) {
-        for (int j = 0; j < 13; j++) {
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 6; j++) {
             if (i > j)  continue;
             auto size = Vec2(15, 8);
             int hp = 1;
@@ -33,10 +32,10 @@ void Level2Creator::CreateBricks() {
         }
     }
 }
+
+
 void Level2Creator::CreateBorders() {
     CreateBorder(engine->GetEntityManager(), Vec2(GetDisplayWidth(ctx), 6), Vec2(0, 0));  // top
     CreateBorder(engine->GetEntityManager(), Vec2(6, GetDisplayHeight(ctx)), Vec2(0, 0));                         // left
     CreateBorder(engine->GetEntityManager(), Vec2(6, GetDisplayHeight(ctx)), Vec2(GetDisplayWidth(ctx) - 6, 0));  // right
 }
-
-

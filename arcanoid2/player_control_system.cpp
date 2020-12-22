@@ -21,13 +21,6 @@ void PlayerControlSystem::Update(Context& ctx, Entity* entity) {
     if (IsPressed(ctx, pcc->right) && tc->position.x < GetDisplayWidth(ctx) - rcc->GetSize().x - pcc->border_size) {
         mc->direction = RightVec2;
     }
-
-    if (IsPressed(ctx, pcc->down) && tc->position.y < GetDisplayHeight(ctx) - rcc->GetSize().y) {
-        mc->direction = UpVec2;
-    }
-
-    if (IsPressed(ctx, pcc->down) && tc->position.y < GetDisplayHeight(ctx) - rcc->GetSize().y) {
-    }
 }
 bool PlayerControlSystem::Filter(Entity* entity) const {
         return entity->Contains<PlayerControlComponent>()

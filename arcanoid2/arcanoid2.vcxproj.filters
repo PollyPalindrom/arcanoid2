@@ -141,9 +141,6 @@
     <ClCompile Include="rectangle_render_system.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="texture_render_system.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Arcanoid1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -172,9 +169,6 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="manifold.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="vec2cpp.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="bricks_system.cpp">
@@ -289,6 +283,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="audio_system.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="vec2.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -455,9 +452,6 @@
     <ClInclude Include="rectangle_render_component.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="texture_component.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="transform_component.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -471,9 +465,6 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="rectangle_render_system.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="texture_render_system.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="movement_component.h">
@@ -643,5 +634,8 @@
     <Media Include="C:\Users\Polina\Downloads\grazhdanskaya-oborona-tarasyuk-remiks--po-planu-vse-chiki-pu (online-audio-converter.com).wav">
       <Filter>sounds</Filter>
     </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

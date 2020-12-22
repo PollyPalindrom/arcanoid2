@@ -4,7 +4,6 @@
 #include "error.h"
 //обёртка для работы со сценами. необходима для перемещения между сценами
 void SceneManager::OnUpdate() {
-    try {
         if (scenes.size() > current_scene) {
             if (first_start) {
                 first_start = false;
@@ -18,16 +17,11 @@ void SceneManager::OnUpdate() {
             }
             scenes.at(current_scene)->OnUpdate();
         }
-        else {
-            throw 1;
+        else if (prev_scene != current_scene) {
+            scenes.at(prev_scene)->OnDispose();
+            prev_scene = current_scene;
+            scenes.at(current_scene)->OnCreate();
         }
-    }
-    catch (int i)
-    {
-        Exception ex(i);
-        ex.Print();
-        return;
-    }
 }
 void SceneManager::OnDispose() {
     for (auto& scene : scenes) {
@@ -49,7 +43,7 @@ void SceneManager::NextScene() {
 }
 
 void SceneManager::SetScene(const std::string &name)
-{
+{ 
     try {
         if (named_scenes.count(name) == 0) {
             SetScene(0);

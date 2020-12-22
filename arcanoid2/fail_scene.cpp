@@ -6,15 +6,17 @@
 #include "input.h"
 #include "scene_manager.h"
 #include "ecs_scene.h"
-void FailScene::OnCreate() {}
+#include "lifecycle.h"
 void FailScene::OnUpdate() {
     DrawClearScreen(ctx, PALETTE[8]);
     auto x = 1;
     auto y = GetDisplayHeight(ctx) / 2;
-    Print(ctx, "GAME OVER\nSPACE TO RESTART", x, y, PALETTE[7], 2);
+    Print(ctx, "GAME OVER\nSPACE TO RESTART\nOR ESC to EXIT", x, y, PALETTE[7], 2);
     if (IsClicked(ctx, Button::KEY_SPACE)) {
-        GetSceneManager()->SetScene(0);
+        GetSceneManager()->SetScene(1);
+    }
+    if (IsClicked(ctx, Button::KEY_ESCAPE)) {
+        ExitApp(ctx);
     }
 }
-void FailScene::OnDispose() {}
 FailScene::FailScene(Context& ctx) :ECSScene(ctx),ctx(ctx) {}
